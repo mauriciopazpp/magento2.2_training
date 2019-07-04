@@ -1,0 +1,43 @@
+@color-black:   black;
+@color-white: white;
+@color-main-orange: #ff7000;
+
+#mixin-main-black-background {
+  background-color:  @color-black;
+  border-color: @color-black;
+}
+#mixin-main-orange-background {
+  background-color: @color-main-orange;
+  border-color:  @color-main-orange;
+}
+
+/*
+* Panel main header
+*/
+.page-header .panel.wrapper {
+  #mixin-main-black-background;
+}
+
+/*
+* Menu
+*/
+.nav-sections-item-content {
+  #mixin-main-orange-background;
+
+  .navigation {
+    #mixin-main-orange-background;
+
+    ul li a.level-top span {
+      color: @color-white;
+    }
+  }
+}
+
+/*
+* Buttons
+*/
+.action {
+  &.primary {
+    #mixin-main-orange-background
+  }
+}
